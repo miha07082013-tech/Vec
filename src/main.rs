@@ -9,9 +9,12 @@ fn main() {
 
         let a: i32 = input.trim().parse().expect("Error");
 
-        let mut v = Vec::new();
-        v.push(vec![1; a.try_into().unwrap()]);
+        let mut v: Vec<Vec<i32>> = Vec::new();
+        
+        let new_vec: Vec<i32> = (1..=a).collect();
 
-        println!("Vector - {:?}", v);
+        v.push(new_vec);
+
+        println!("{:?}", v);
     }
 }
