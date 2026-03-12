@@ -2,6 +2,7 @@ use std::io;
 
 fn main() {
     println!("===Hello VEC===");
+    println!("===Set Vector===");
 
     loop {
         let mut input = String::new();
